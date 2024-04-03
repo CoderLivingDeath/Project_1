@@ -12,3 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073e5e93e9a1ec840bf7ec3383d526d4, type: 3}
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
+  Physique: 0
+  Strength: 0
+  Dexterity: 5
+  Intelligence: 0
+  WalkSpeed: 0
+  ShiftSpeed: 0
+  StepSize: 0
+  AttackSpeed: 0
+  RegenerationSpeed: 0

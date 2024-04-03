@@ -9,7 +9,7 @@ namespace Project.Scripts.Models.MovementWithStatsModel
     {
         public override Vector2 CalculateNewPosition(MovementWithStatsData data)
         {
-            var offset = data.Direction * Time.deltaTime * 10;
+            var offset = data.Direction * Time.deltaTime * data.MovableObject.ActualStats.Dexterity;
             var NewPosition = data.Rigidbody.position + offset;
 
             return NewPosition;

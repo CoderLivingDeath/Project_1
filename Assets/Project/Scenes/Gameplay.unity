@@ -555,7 +555,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 1.325
+  orthographic size: 1.125
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -940,6 +940,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4423418005733269531, guid: 6722729bde958a74a82662cf3823fef8, type: 3}
+      propertyPath: playerConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 936c1da4a4a7a2543a0df0c597c8d3b4, type: 2}
+    - target: {fileID: 7789341905759927093, guid: 6722729bde958a74a82662cf3823fef8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 8231117550778068406, guid: 6722729bde958a74a82662cf3823fef8, type: 3}
       propertyPath: m_Name
       value: Player

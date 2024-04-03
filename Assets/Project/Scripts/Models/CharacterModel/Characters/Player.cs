@@ -10,18 +10,18 @@ namespace Project.Scripts.Models.CharacterModel
             Stats baseStats = new Stats(config.Physique, config.Strength, config.Dexterity, config.Intelligence);
             SecondStats baseSecondStats = new SecondStats(config.WalkSpeed, config.ShiftSpeed, config.StepSize, config.AttackSpeed, config.RegenerationSpeed);
 
-            BaseStats = baseStats;
-            BaseSecondStats = baseSecondStats;
+            SetBaseStats(baseStats);
+            SetBaseSecondsStats(baseSecondStats);
         }
 
         public override void UpdateActualStats()
         {
-            throw new System.NotImplementedException();
+            ActualStats = BaseStats;
         }
 
         public override void UpdateSActualecondStats()
         {
-            throw new System.NotImplementedException();
+            ActualSecondStats = BaseSecondStats;
         }
     }
 }

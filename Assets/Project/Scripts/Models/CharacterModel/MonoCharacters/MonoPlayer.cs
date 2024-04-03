@@ -11,6 +11,8 @@ using Zenject;
 [RequireComponent(typeof(Rigidbody2D))]
 public sealed class MonoPlayer : MonoBehaviour, IMovableWithStats, IDisposable
 {
+    public PlayerConfig playerConfig;
+
     private Player _player;
     public Player Player => _player;
 
@@ -44,12 +46,7 @@ public sealed class MonoPlayer : MonoBehaviour, IMovableWithStats, IDisposable
     {
         _movementHandler = new();
 
-        Stats baseStats = new();
-        SecondStats secondStats = new();
-
-        PlayerConfig config = new PlayerConfig(baseStats, secondStats);
-
-        _player = new Player(config);
+        _player = new Player(this.playerConfig);
 
         _movementHandler.OnMoveEvent += (x) => Debug.Log(x.movementData.MovableObject.GetType().ToString() + $" : MovementVecotr({x.movementData.Direction})" +  $" : Position({x.movementData.MovableObject.GameObject.transform.position}" + $" : PrevPosition({x.PreviousPosition}");
     }
